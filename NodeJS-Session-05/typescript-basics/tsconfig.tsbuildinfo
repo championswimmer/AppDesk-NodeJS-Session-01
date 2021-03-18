@@ -161,8 +161,18 @@
         "signature": "d2f31f19e1ba6ed59be9259d660a239d9a3fcbbc8e038c6b2009bde34b175fed",
         "affectsGlobalScope": false
       },
+      "./src/lib2.ts": {
+        "version": "6800077d75ce55df87a41961687690eb608f5c329e24114fe255ee6d381f0734",
+        "signature": "d98f9c33cba5a32e4063cc4eba367278862c099e2d8c72cab4daff10e20c8ee7",
+        "affectsGlobalScope": false
+      },
+      "./src/lib.ts": {
+        "version": "c9b1cc7276ae3935d2a12a2890ae4f00d48306d36de2d6843a37d97592d2d7bb",
+        "signature": "da3f3e5e6f4c97fe71fe401ef8d3de9808ee439d1f75075c4eb5c7702de6ccf0",
+        "affectsGlobalScope": false
+      },
       "./src/hello.ts": {
-        "version": "f3f3cb9e19ad99ca0078db3cf5b868c06239b40cac21641d1669f9a30a98869a",
+        "version": "ff75abd13ace2a0e24f2b3842be36ce9400eee230242986be56497678c86fcb0",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -401,6 +411,7 @@
       "incremental": true,
       "target": 4,
       "module": 1,
+      "sourceMap": true,
       "outDir": "./dist",
       "rootDir": "./src",
       "strict": true,
@@ -640,7 +651,11 @@
       ],
       "./src/hello.ts": [
         "./node_modules/@types/node/fs.d.ts",
-        "./node_modules/@types/node/path.d.ts"
+        "./node_modules/@types/node/path.d.ts",
+        "./src/lib.ts"
+      ],
+      "./src/lib.ts": [
+        "./src/lib2.ts"
       ]
     },
     "exportedModulesMap": {
@@ -952,7 +967,9 @@
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
       "./node_modules/typescript/lib/lib.scripthost.d.ts",
       "./node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "./src/hello.ts"
+      "./src/hello.ts",
+      "./src/lib.ts",
+      "./src/lib2.ts"
     ]
   },
   "version": "4.2.3"

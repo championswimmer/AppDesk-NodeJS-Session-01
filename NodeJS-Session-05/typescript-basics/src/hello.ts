@@ -1,5 +1,6 @@
 import { writeFile } from 'fs'
 import { join } from 'path'
+import { fun1 } from './lib'
 
 writeFile(
   join(__dirname, 'file.txt'),
@@ -8,3 +9,5 @@ writeFile(
     if (err) console.error(err)
   }
 )
+
+fun1();

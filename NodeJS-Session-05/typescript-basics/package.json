@@ -2,9 +2,11 @@
   "name": "typescript-basics",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/hello.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/hello.js"
   },
   "author": "",
   "license": "ISC",
